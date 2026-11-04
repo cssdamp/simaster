@@ -6,13 +6,12 @@
  */
 
 // --------------------------------------------------------------------
-// 1. INISIALISASI SUPABASE CLIENT
-// --------------------------------------------------------------------
+// 1. Masukkan URL dan Anon Key Anda
 const SUPABASE_URL = 'https://lvbtsfryyokielmiylar.supabase.co';
 const SUPABASE_ANON_KEY = 'sb_publishable_uXM0Tg2l94nRY5X9hN_wDw_h5f2liZZ';
 
-// Standard Supabase client setup
-const supabase = window.supabase ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+// 2. Gunakan nama variabel 'supabaseClient' (atau nama lain) alih-alih 'supabase'
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 /**
  * Utility: Format Tanggal ke String (dd-MM-yyyy HH:mm)
